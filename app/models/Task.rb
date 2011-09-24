@@ -1,5 +1,11 @@
 require 'dm-core'
-DataMapper.setup(:default, 'sqlite:///Users/sklise/ITP/Understanding Networks/BallDropClient/db/data.db')
+DataMapper.setup(:default, {
+  :adapter => 'mysql',
+  :host => 'localhost',
+  :username => 'root',
+  :password => '',
+  :database => 'test'
+})
 
 class Task
   include DataMapper::Resource

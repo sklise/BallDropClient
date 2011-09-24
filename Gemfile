@@ -4,7 +4,7 @@ gem 'sinatra'
 
 gem 'dm-core'
 gem 'dm-migrations'
-gem 'dm-sqlite-adapter'
+gem 'dm-mysql-adapter'
 
 gem 'sass'
 gem 'json'
