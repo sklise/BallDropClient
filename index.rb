@@ -1,6 +1,7 @@
 require 'bundler'
 Bundler.require
 require 'net/telnet'
+require 'socket'
 
 configure do |c|
   enable :sessions

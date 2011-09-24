@@ -1,5 +1,7 @@
 <h1>Ball Drop</h1>
 
+<h3>User <%= @ip %></h3>
+
 <form method="POST" action="/right">
   <input type="submit" value="right">
 </form>
@@ -16,10 +18,15 @@
   <input type="submit" value="left">
 </form>
 
+<form method="POST" action="/connect">
+  <input type="submit" value="connect">
+</form>
+
 <form method="POST" action="/disconnect">
   <input type="submit" value="disconnect">
 </form>
 
-<form method="POST" action="/connect">
-  <input type="submit" value="connect">
+
+<form method="POST" action="/info">
+  <input type="submit" value="identify">
 </form>

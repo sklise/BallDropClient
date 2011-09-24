@@ -1,10 +1,15 @@
 require 'dm-core'
+require 'yaml'
+
+config = YAML::load(File.open('config.yml'))
+connection = config["local"]
+
 DataMapper.setup(:default, {
   :adapter => 'mysql',
-  :host => 'localhost',
-  :username => 'root',
-  :password => '',
-  :database => 'test'
+  :host => connection["host"],
+  :username => connection["user"],
+  :password => connection["password"],
+  :database => connection["database"]
 })
 
 class Task

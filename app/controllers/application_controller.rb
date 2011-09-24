@@ -1,5 +1,12 @@
 get "/" do
+  @ip = Socket.gethostname
   erb :main
+end
+
+post "/info" do
+  t = Task.new(:command => "i", :done => false)
+  t.save
+  redirect "/"
 end
 
 post "/connect" do
