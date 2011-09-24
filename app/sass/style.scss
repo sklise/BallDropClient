@@ -1,0 +1,47 @@
+@import 'reset';
+
+$background: rgb(0,0,0);
+$text-base: rgb(245,245,245);
+$arrow-buttons: #319C41;
+$arrow-accent: #3FC454;
+$arrow-accent: #50CD51;
+
+
+html {
+	background: $background;
+	color: $text-base;
+}
+
+body {
+	font-family: Lucida Grande;
+	font-size: 100%;
+}
+
+h1 {
+	font-size: 2em;
+	margin: 0.65em 0;
+}
+
+#wrapper {
+	margin: 2em auto;
+	width: 40em;
+}
+
+#arrow-keys {
+	font-size: 4em;
+	position: relative;
+
+	li {
+		background-color: $arrow-buttons;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+		-webkit-box-shadow: 0 0 8px $arrow-accent inset;
+		display: block;
+		height: 1em;
+		margin: 0.2em;
+		padding: 0.4em;
+		position: relative;
+		width: 1em;
+	}
+}
