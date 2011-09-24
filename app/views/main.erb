@@ -1,15 +1,15 @@
 <h1>Ball Drop Client</h1>
 
-<ul>
-  <li><a href="#">Connect</a></li>
-  <li><a href="#">Disconnect</a></li>
+<ul id="connection">
+  <li id="connect">Connect</li>
+  <li id="disconnect">Disconnect</li>
 </ul>
 
-<h3>User: <%= /([0-9\-]*)/.match(@ip)[1] %> <a href="#">Identify Paddle</a></h3>
+<h3>User: <%= /([0-9\-]*)/.match(@ip)[1] %> <span id="info">Identify Paddle</span></h3>
 
 <ul id="arrow-keys">
-  <li>☝</li>
-  <li>☟</li>
-  <li>☞</li>
-  <li>☜</li>
+  <li id="arrow-up">☝</li>
+  <li id="arrow-down">☟</li>
+  <li id="arrow-right">☞</li>
+  <li id="arrow-left">☜</li>
 </ul>

@@ -27,6 +27,15 @@ h1 {
 	width: 40em;
 }
 
+#connection {
+	
+	margin: 1em 0;
+	
+	li {
+		display: inline;
+	}
+}
+
 #arrow-keys {
 	font-size: 4em;
 	position: relative;
@@ -37,11 +46,15 @@ h1 {
 		-moz-border-radius: 4px;
 		border-radius: 4px;
 		-webkit-box-shadow: 0 0 8px $arrow-accent inset;
+		cursor: pointer;
 		display: block;
 		height: 1em;
 		margin: 0.2em;
 		padding: 0.4em;
 		position: relative;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		user-select: none;
 		width: 1em;
 	}
 }
