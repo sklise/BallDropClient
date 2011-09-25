@@ -1,15 +1,21 @@
+<div id="ip">
+User: <%= /([0-9\-]*)/.match(@ip)[1] %>
+</div>
 <h1>Ball Drop Client</h1>
 
+
+
 <ul id="connection">
-  <li id="connect">Connect</li>
-  <li id="disconnect">Disconnect</li>
+  <li id="connect">✔ Connect</li>
+  <li id="disconnect">✘ Disconnect</li>
+  <li id="info">Identify Paddle</li>
 </ul>
 
-<h3>User: <%= /([0-9\-]*)/.match(@ip)[1] %> <span id="info">Identify Paddle</span></h3>
-
 <ul id="arrow-keys">
+  <li class="spacer"></li>
   <li id="arrow-up">☝</li>
+  <li class="spacer"></li>
+  <li id="arrow-left">☜</li>
   <li id="arrow-down">☟</li>
   <li id="arrow-right">☞</li>
-  <li id="arrow-left">☜</li>
 </ul>

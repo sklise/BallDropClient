@@ -6,6 +6,18 @@ $arrow-buttons: #319C41;
 $arrow-accent: #3FC454;
 $arrow-accent: #50CD51;
 
+@mixin rounded-corners {
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+@mixin act-as-button {
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}
 
 html {
 	background: $background;
@@ -24,16 +36,33 @@ h1 {
 
 #wrapper {
 	margin: 2em auto;
-	width: 40em;
+	width: 30em;
 }
 
 #connection {
-	
+	clear: both;
+	position: relative;
 	margin: 1em 0;
 	
 	li {
-		display: inline;
+		@include act-as-button;
+		@include rounded-corners;
+		background: #66BDDA;
+		display: block;
+		float: left;
+		margin-right: 0.5em;
+		padding: 0.5em;
+		
+		&#info {
+			background: #66BDDA;
+		}
 	}
+}
+
+#ip {
+	float: right;
+	padding: 1em 0;
+	position: relative;
 }
 
 #arrow-keys {
@@ -41,20 +70,20 @@ h1 {
 	position: relative;
 
 	li {
+		@include act-as-button;
+		@include rounded-corners;
 		background-color: $arrow-buttons;
-		-webkit-border-radius: 4px;
-		-moz-border-radius: 4px;
-		border-radius: 4px;
 		-webkit-box-shadow: 0 0 8px $arrow-accent inset;
-		cursor: pointer;
 		display: block;
+		float: left;
 		height: 1em;
 		margin: 0.2em;
 		padding: 0.4em;
 		position: relative;
-		-webkit-user-select: none;
-		-moz-user-select: none;
-		user-select: none;
 		width: 1em;
+		
+		&.spacer {
+			visibility: hidden;
+		}
 	}
 }
