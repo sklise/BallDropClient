@@ -30,5 +30,5 @@ h1 { font-size: 2em; margin: 0.65em 0; }
 #ip { float: right; padding: 1em 0; position: relative; }
 
 #arrow-keys { font-size: 4em; position: relative; }
-#arrow-keys li { cursor: pointer; -webkit-user-select: none; -moz-user-select: none; user-select: none; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; background-color: #319c41; -webkit-box-shadow: 0 0 8px #50cd51 inset; display: block; float: left; height: 1em; margin: 0.2em; padding: 0.4em; position: relative; width: 1em; }
+#arrow-keys li { cursor: pointer; -webkit-user-select: none; -moz-user-select: none; user-select: none; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; background-color: #319c41; -webkit-box-shadow: 0 0 8px #50cd51 inset; display: block; float: left; height: 1em; margin: 0.2em 0.2em 0 0; padding: 0.6em; position: relative; width: 1em; }
 #arrow-keys li.spacer { visibility: hidden; }
