@@ -1,8 +1,6 @@
 require 'dm-core'
-require 'yaml'
 
-config = YAML::load(File.open('config.yml'))
-connection = config["local"]
+connection = @config["local"]
 
 DataMapper.setup(:default, {
   :adapter => 'mysql',
