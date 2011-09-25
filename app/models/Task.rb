@@ -1,6 +1,6 @@
 require 'dm-core'
 
-connection = @config["local"]
+connection = @config["remote"]
 
 DataMapper.setup(:default, {
   :adapter => 'mysql',
