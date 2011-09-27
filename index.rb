@@ -4,7 +4,7 @@ require 'net/telnet'
 require 'socket'
 require 'yaml'
 
-@config = YAML::load(File.open('./config.yml'))
+@config = YAML::load(File.open('./database.yml'))
 configure do |c|
   enable :sessions
   set :root, File.dirname(__FILE__)
